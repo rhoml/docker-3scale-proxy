@@ -31,8 +31,8 @@ RUN wget http://openresty.org/download/ngx_openresty-$OPENRESTY_VERSION.tar.gz &
     make && \
     make install
 
-ADD conf/nginx_$PROVIDER_ID.conf /opt/openresty/nginx/conf/nginx.conf
-ADD conf/nginx_$PROVIDER_ID.lua /opt/openresty/nginx/conf/nginx_$PROVIDER_ID.lua
+ADD conf/nginx_$PROVIDER_ID.conf /opt/3scale/nginx.conf
+ADD conf/nginx_$PROVIDER_ID.lua /opt/3scale/nginx_$PROVIDER_ID.lua
 
 EXPOSE 80
 
