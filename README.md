@@ -26,10 +26,10 @@ $ cd docker-3scale-proxy
 $ docker build -t rhoml/docker-3scale-proxy .
 ```
 
-### Running the docker image created (-d: detached mode, -P: expose the port 80 on the host machine)
+### Running the docker image created (-d: detached mode, -p: Expose port 1300 pointing to port 80 on the local container)
 
 ```
-$ docker run -d -p 1300:80 -P rhoml/docker-3scale-proxy
+$ docker run -d -p 1300:80 rhoml/docker-3scale-proxy
 ```
 
 This command will load a Docker container with 3Scale's proxy on port 1300.
