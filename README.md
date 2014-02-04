@@ -11,7 +11,10 @@ Refer to Docker [Documentation](http://docs.docker.io/en/latest/installation/ubu
 
 ## Docker 3scale proxy installation
 
-### Building the docker image
+### Gathering 3scale proxy config files
+You can follow the instructions on the support page at 3scale's support [website](https://support.3scale.net/howtos/api-configuration/nginx-proxy).
+
+#### Building the docker image
 
 ```
 $ docker build -t 3scale-proxy git://github.com/rhoml/docker-3scale-proxy.git
@@ -28,3 +31,5 @@ $ docker build -t rhoml/docker-3scale-proxy .
 ```
 $ docker run -d -p 1300:80 -P rhoml/docker-3scale-proxy
 ```
+
+This command will load a Docker container with 3Scale's proxy on port 1300.
