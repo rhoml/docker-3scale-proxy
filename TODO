@@ -1,0 +1,2 @@
+* Add tests to docker container
+* Fix compatibility issues between docker and openresty
