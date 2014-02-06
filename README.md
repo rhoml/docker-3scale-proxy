@@ -33,3 +33,18 @@ $ docker run -d -p 1300:80 rhoml/docker-3scale-proxy
 ```
 
 This command will load a Docker container with 3Scale's proxy on port 1300.
+
+## Author
+
+**Rhommel Lamas**
+
+1. __Twitter__: @rhoml
+2. __Email__: roml [at] rhommell.com
+
+## Contributing
+
+1. Fork it
+2. Create your feature branch (`git checkout -b my-new-feature`)
+3. Commit your changes (`git commit -am 'Add some feature'`)
+4. Push to the branch (`git push origin my-new-feature`)
+5. Create new Pull Request
