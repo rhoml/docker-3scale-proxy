@@ -7,9 +7,7 @@ ENV DEBIAN_FRONTEND noninteractive
 ENV PROVIDER_ID 48
 
 ## Repositories
-RUN echo 'deb http://archive.ubuntu.com/ubuntu precise main universe' > /etc/apt/sources.list && \
-    echo 'deb http://archive.ubuntu.com/ubuntu precise-updates universe' >> /etc/apt/sources.list && \
-    apt-get update
+RUN apt-get update --fix-missing
 
 ## Install supervisord
 RUN apt-get install -y supervisor && mkdir -p /var/log/supervisor
